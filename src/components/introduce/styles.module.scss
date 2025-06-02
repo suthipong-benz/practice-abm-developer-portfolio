@@ -1,0 +1,33 @@
+.headingText {
+  font-size: 3.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+
+  text-align: center;
+
+  .gradientText {
+    background: linear-gradient(
+      90deg,
+      #FF8660 0%,
+      #8000FF 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.introduceText {
+  font-size: 1.125rem;
+  font-weight: 300;
+
+  text-align: center;
+}
+
+.experienceText {
+  font-size: 1.25rem;
+  font-weight: 600;
+
+  color: #C5C5C5;
+  text-align: center;
+}

@@ -1,0 +1,13 @@
+.avatarWrapper {
+  width: 213px;
+  height: 213px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+
+  background: linear-gradient(
+    135deg,
+    #FF8660 0%,
+    #8000FF 100%
+  );
+}
