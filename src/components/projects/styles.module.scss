@@ -1,0 +1,70 @@
+.heading {
+  background: linear-gradient(
+    90deg,
+    #FF8660 0%,
+    #D5491D 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.25rem;
+}
+
+.projectsContainer {
+  display: grid;
+  column-gap: 1.875rem;
+  grid-template-columns: repeat(2, 1fr);
+
+  .project {
+    display: flex;
+    flex-direction: column;
+
+    overflow: hidden;
+    border-radius: 1.125rem;
+
+    cursor: pointer;
+
+    .iconWrapper {
+      transition: transform 0.2s ease;
+    }
+
+    &:hover {
+      .iconWrapper {
+        transform: translate(3px, -3px);
+      }
+    }
+
+    .contentContainer {
+      padding: 1rem 1.5rem;
+      background: #2A2A2A;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+  
+        .label {
+          font-size: 0.625rem;
+          line-height: 1.25rem;
+          font-weight: 800;
+  
+          color: #C5C5C5;
+        }
+  
+        .title {
+          font-size: 1.25rem;
+          line-height: 1.25rem;
+          font-weight: 800;
+  
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
