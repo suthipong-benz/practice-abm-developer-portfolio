@@ -20,9 +20,9 @@ export default function Introduce () {
 
         <span className={`${styles.introduceText} mt-10`}>
           I am a seasoned full-stack software engineer with over 
-          <br />8 years of professional experience, specializing in backend development. 
-          <br />My expertise lies in crafting robust and scalable SaaS-based 
-          <br />architectures on the Amazon AWS platform.
+          <br className="hidden md:block" />8 years of professional experience, specializing in backend development. 
+          <br className="hidden md:block" />My expertise lies in crafting robust and scalable SaaS-based 
+          <br className="hidden md:block" />architectures on the Amazon AWS platform.
         </span>
 
         <div className="flex gap-4 mt-10">
@@ -32,7 +32,7 @@ export default function Introduce () {
 
         <span className={`${styles.experienceText} mt-20`}>EXPERIENCE WITH</span>
 
-        <div className="flex gap-15 mt-10">
+        <div className="flex gap-6 md:gap-15 mt-10">
           <IconCSS />
           <IconHTML />
           <IconJavascript />

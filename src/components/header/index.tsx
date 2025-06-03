@@ -3,6 +3,26 @@ import styles from './styles.module.scss'
 import Logo from '@/assets/logo.png'
 import Link from 'next/link'
 
+interface IMenuItem {
+  label: string;
+  href: string;
+}
+
+const menuItems: IMenuItem[] = [
+  {
+    label: 'Projects',
+    href: '/'
+  },
+  {
+    label: 'Experience',
+    href: '/'
+  },
+  {
+    label: 'Contact',
+    href: '/'
+  }
+]
+
 export default function Header () {
   return (
     <header className={styles.header}>
@@ -10,19 +30,14 @@ export default function Header () {
         <div className="flex justify-between items-center">
           <Image src={Logo} width={80} height={80} alt='Logo' />
           <nav className="flex items-center">
-            <ul className="flex gap-8">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/">Projects</Link>
-              </li>
-              <li>
-                <Link href="/">Experience</Link>
-              </li>
-              <li>
-                <Link href="/">Contact</Link>
-              </li>
+            <ul className="flex gap-2 md:gap-8">
+              {
+                menuItems.map((item, index) => (
+                  <li key={index}>
+                    <Link href={item.href}>{item.label}</Link>
+                  </li>
+                ))
+              }
             </ul>
           </nav>
         </div>

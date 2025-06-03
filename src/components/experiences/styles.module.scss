@@ -14,11 +14,15 @@
 }
 
 .experienceHeading {
-  font-size: 1.375rem;
+  font-size: 1rem;
   font-weight: 700;
   line-height: 2rem;
 
   color: white;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.375rem;
+  }
 }
 
 .experienceTimeline {

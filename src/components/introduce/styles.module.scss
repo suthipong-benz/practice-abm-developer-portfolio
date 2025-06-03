@@ -1,9 +1,13 @@
 .headingText {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   line-height: 1.2;
 
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    font-size: 3.5rem;
+  }
 
   .gradientText {
     background: linear-gradient(

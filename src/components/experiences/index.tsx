@@ -9,8 +9,8 @@ export default function Experiences () {
       <span className={styles.heading}>EXPERIENCES</span>
 
       <div className="flex flex-col gap-4 w-full mt-12">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="flex md:items-center gap-4">
             <IconGoogle />
             <span className={styles.experienceHeading}>Lead Software Engineer at Google</span>
           </div>
@@ -29,8 +29,8 @@ export default function Experiences () {
       </div>
 
       <div className="flex flex-col gap-4 w-full mt-12">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="flex md:items-center gap-4">
             <IconApple />
             <span className={styles.experienceHeading}>Junior Software Engineer at Apple</span>
           </div>
@@ -48,8 +48,8 @@ export default function Experiences () {
       </div>
 
       <div className="flex flex-col gap-4 w-full mt-12">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div className="flex md:items-center gap-4">
             <IconMeta />
             <span className={styles.experienceHeading}>Software Engineer at Meta</span>
           </div>
